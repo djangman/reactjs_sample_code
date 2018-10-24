@@ -1,0 +1,22 @@
+export const APPNAME					= "QuiverBird";
+
+export const FETCH_RSSFEEDS             = "FETCH_RSSFEEDS";
+export const ADD_FEED_T0_DB             = "ADD_FEED_T0_DB";
+export const ADD_ITEM_T0_DB             = "ADD_ITEM_T0_DB";
+export const ROOT_URL                   = "ROOT_URL";
+export const FEEDS_IS_LOADING           = "FEEDS_IS_LOADING";
+export const FEEDS_FETCH_DATA_SUCCESS   = "FEEDS_FETCH_DATA_SUCCESS";
+
+
+export const FEEDS_DEL_FEED_SUCCESS     = "FEEDS_DEL_FEED_SUCCESS";
+export const FEEDS_DEL_FEED_SUCCESS_NA  = "FEEDS_DEL_FEED_SUCCESS_NA";
+export const FEEDS_ADD_DATA_SUCCESS     = "FEEDS_ADD_DATA_SUCCESS";
+export const FEEDS_ADD_DATA_SUCCESS_NA  = "FEEDS_ADD_DATA_SUCCESS_NA";
+
+export const FEEDS_FETCH_DATA_SUCCESS_NA  = "FEEDS_FETCH_DATA_SUCCESS_NA";
+
+export const FEEDS_FETCH_ITEM_SUCCESS   = "FEEDS_FETCH_ITEM_SUCCESS";
+export const FEEDS_FETCH_PAST_ITEM_SUCCESS   = "FEEDS_FETCH_PAST_ITEM_SUCCESS";
+
+
+export const FEEDS_HAS_ERRORED          = "FEEDS_HAS_ERRORED";
