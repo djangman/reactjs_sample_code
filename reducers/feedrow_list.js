@@ -48,8 +48,6 @@ export function feeds_na(state = [], action) {
 							feed_id: action.new_feed.feed_id, 
 							url:  action.new_feed.feedurl, 
 							name: action.new_feed.name,
-							frequency: action.new_feed.frequency,
-							history: action.new_feed.history,
 							active: 0
 						}];
 			
@@ -79,8 +77,6 @@ export function feeds(state = [], action) {
 							feed_id: action.new_feed.feed_id, 
 							url:  action.new_feed.feedurl, 
 							name: action.new_feed.name,
-							frequency: action.new_feed.frequency,
-							history: action.new_feed.history,
 							active: 1
 						}];
 

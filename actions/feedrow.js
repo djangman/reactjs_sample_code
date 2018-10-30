@@ -35,9 +35,11 @@ export function feedsAddDataSuccess_na(new_feed) {
 		};
 }
 
-async function moveToInactive(feedobj, dispatch) {
+/***
+ * Action to take care of moving a RSS Feed from active to inactive or reverse
+ */
 
-	console.log(feedobj);
+async function moveToInactive(feedobj, dispatch) {
 
 	if (feedobj.active === 1) {
 		await dispatch(feedsDeleteFeedSuccess(feedobj.feed_id));
@@ -50,6 +52,11 @@ async function moveToInactive(feedobj, dispatch) {
 	}
 
 }
+
+
+/***
+ *  Changes boolean ( tinyint ) fields in the rssfeeds table  
+ */
 
 export function postFieldToggle (feedobj)  {
 	//console.log(feedobj);
@@ -80,6 +87,11 @@ export function postFieldToggle (feedobj)  {
 
 }
 
+/***
+ *		Updates the filter string for each feed ( to exclude 
+ * 		particular podcast episodes/blog entries from being posted )
+ */
+
 export function postFilterChange(val, id ) {
 	let axios_instance = apiClient();
 	var params = new URLSearchParams();
@@ -94,14 +106,14 @@ export function postFilterChange(val, id ) {
 			}
 			return response;
 		})
-
-			.then(() => {
-				console.log("success");
-			})
-
-	};	
+	};
 
 }
+
+/*** 
+ * Changes various integer fields in rssfeeds table
+ * 
+*/
 
 export function postFlagChange (field, field_value, id)  {
 	let axios_instance = apiClient();
