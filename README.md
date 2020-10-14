@@ -1,5 +1,5 @@
 # reactjs_sample_code
-The code is in this repo is just a portion of the code that drives the application, quiverbird.com/app.
+The code is in this repo is just a portion of the code that drives the application, quiverbird.fun/app.
 
 Specifically, the page that handles User's RSS Feeds:
 
